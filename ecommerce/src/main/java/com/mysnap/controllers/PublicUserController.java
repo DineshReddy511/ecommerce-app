@@ -23,7 +23,8 @@ public class PublicUserController {
 	private IUserService userService;
 
 	@PostMapping("/")
-	public UserEntity saveUser(@RequestBody User user) throws Exception {
+
+	public UserEntity saveUser(@RequestBody User user) throws Exception{
 		return userService.saveUser(user);
 	}
 
